@@ -1,10 +1,13 @@
-import '../../styles/LoadingSpinner.css';
-
-export default function LoadingSpinner({ label = 'Carregando...' }) {
+/**
+ * Indicador de carregamento exibido enquanto dados são buscados.
+ * @param {Object} props
+ * @param {string} [props.message='Carregando...'] - Texto ao lado do spinner
+ */
+export default function LoadingSpinner({ message = 'Carregando...' }) {
   return (
-    <div className="loading-spinner" role="status" aria-live="polite">
-      <span className="loading-spinner-circle" aria-hidden="true" />
-      <span className="loading-spinner-label">{label}</span>
+    <div className="spinner-wrapper" role="status">
+      <span className="spinner" aria-hidden="true" />
+      <span>{message}</span>
     </div>
   );
 }
