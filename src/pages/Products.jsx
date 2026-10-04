@@ -39,7 +39,7 @@ export default function Products() {
     <main className="products">
       <h1 className="products-title">Produtos</h1>
 
-      {isLoading && <LoadingSpinner label="Carregando produtos..." />}
+      {isLoading && <LoadingSpinner message="Carregando produtos..." />}
 
       {!isLoading && errorMessage && (
         <p className="products-error" role="alert">
