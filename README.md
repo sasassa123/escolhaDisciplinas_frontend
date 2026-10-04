@@ -1,16 +1,59 @@
-# React + Vite
+# Gangue do Patinete — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma plataforma que reúne tudo o que o estudante precisa para escolher sua disciplina optativa: carga horária real, formato de avaliação, pré-requisitos e custos, relação com a carreira, avaliações verificadas de quem já cursou e vagas em tempo real com alerta, além de uma lista de 1ª, 2ª e 3ª opções já validada contra o horário. Para a pós-graduação, há uma área onde o estudante pode encontrar disciplinas que pode cursar em outras instituições e gerar em PDF a documentação necessária para a solicitação.
 
-Currently, two official plugins are available:
+Este repositório contém a interface web do projeto. A API fica no repositório [escolhaDisciplinas_api](https://github.com/sasassa123/escolhaDisciplinas_api).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
+React 19, Vite, React Router DOM, Axios, CSS puro (mobile-first)
 
-## React Compiler
+## Pré-requisitos
+- Node.js 18 ou superior
+- A API rodando em http://localhost:3001 (veja o README do backend)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como rodar
+```bash
+npm install
+cp .env.example .env
+npm run dev       # desenvolvimento (hot reload)
+```
+O frontend roda em http://localhost:5173
 
-## Expanding the ESLint configuration
+Outros comandos:
+```bash
+npm run build     # gera a versão de produção na pasta dist/
+npm run preview   # serve a versão de produção localmente
+npm run lint      # verifica o código com ESLint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Variáveis de ambiente
+| Variável | Descrição | Exemplo |
+|---|---|---|
+| VITE_API_URL | URL base da API | http://localhost:3001/api |
+
+## Rotas
+| Rota | Página |
+|---|---|
+| / | Home (inclui o teste de conexão com a API) |
+| /products | Lista de produtos consumida da API |
+| /about | Sobre o projeto |
+| /contact | Contato |
+| * | Página 404 |
+
+## Estrutura de pastas
+- `src/components` — componentes de layout (Header, Footer, Navigation) e teste da API
+- `src/components/common` — componentes reutilizáveis (Button, Card, LoadingSpinner)
+- `src/pages` — uma página para cada rota
+- `src/services` — configuração do Axios e funções de requisição à API
+- `src/styles` — estilos globais, variáveis de CSS e layout responsivo
+- `src/App.jsx` — definição das rotas
+- `src/main.jsx` — ponto de entrada da aplicação
+
+## Responsividade
+Layout mobile-first com breakpoints em 480px, 768px, 1024px e 1440px.
+
+## Equipe
+- Leonardo de Avila
+- Matheus Pelissari
+- Pedro Gulin
+- Felippe Matias
