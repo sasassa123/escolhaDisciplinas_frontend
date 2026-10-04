@@ -1,0 +1,29 @@
+.products {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.products-title {
+  margin: 0 0 var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--spacing-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-error {
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius);
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.products-empty {
+  color: var(--color-text-muted);
+}
