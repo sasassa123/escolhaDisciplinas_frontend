@@ -9,4 +9,9 @@ export async function fetchApiHealth() {
   return response.data;
 }
 
+export async function fetchProducts() {
+  const response = await api.get('/products');
+  return Array.isArray(response.data) ? response.data : [];
+}
+
 export default api;
