@@ -9,14 +9,14 @@ import { useAuth } from '../contexts/contexts';
 
 export function Logo() {
   return (
-    <Link to="/" className="logo" aria-label="Acervo — página inicial">
+    <Link to="/" className="logo" aria-label="Optativa+ — página inicial">
       <svg className="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
         <rect x="3" y="5" width="20" height="24" rx="2" fill="var(--accent)" />
         <rect x="9" y="3" width="20" height="24" rx="2" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.6" />
         <path d="M13 10h12M13 14h12M13 18h7" stroke="var(--ink)" strokeWidth="1.6" strokeLinecap="round" />
         <circle cx="24" cy="21.5" r="3.2" fill="var(--marker)" stroke="var(--ink)" strokeWidth="1.4" />
       </svg>
-      <span className="logo__word">acervo</span>
+      <span className="logo__word">Optativa+</span>
     </Link>
   );
 }

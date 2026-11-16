@@ -19,7 +19,7 @@ export function ProfileHeader({ profile, actions }) {
       <div className="profile-header__info">
         <h1 className="page-title">{profile.name}</h1>
         <p className="profile-header__meta">
-          {profile.course} · {profile.period}º período · no acervo desde {formatDate(profile.createdAt)}
+          {profile.course} · {profile.period}º período · no Optativa+ desde {formatDate(profile.createdAt)}
         </p>
         <p className="profile-header__badges">
           {profile.role === 'moderator' && <span className="badge badge--mod"><Icon name="shield" /> Moderação</span>}

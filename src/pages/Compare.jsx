@@ -180,7 +180,7 @@ export default function Compare() {
                     {data.map((d) => <td key={d.code}>{d.professors.join(', ')}</td>)}
                   </tr>
                   <tr>
-                    <th scope="row">No acervo</th>
+                    <th scope="row">No Optativa+</th>
                     {data.map((d) => (
                       <td key={d.code}>
                         <Link to={`/disciplinas/${d.code}?aba=materiais`}>{plural(d.stats.materialCount, 'material', 'materiais')}</Link>

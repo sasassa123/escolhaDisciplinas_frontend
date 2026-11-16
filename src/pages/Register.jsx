@@ -83,12 +83,12 @@ export default function Register() {
           <h1 className="page-title">Confira seu e-mail</h1>
           <p className="lead">
             Enviamos um link de confirmação para <strong>{sent.email}</strong>. Clique nele para ativar sua conta —
-            é assim que garantimos que só alunos de verdade publicam no acervo.
+            é assim que garantimos que só alunos de verdade publicam no Optativa+.
           </p>
           {sent.devConfirmationUrl && (
             <div className="dev-mail">
               <p className="dev-mail__label">E-mail simulado — ambiente de desenvolvimento</p>
-              <p className="dev-mail__subject">Assunto: Confirme sua conta no Acervo</p>
+              <p className="dev-mail__subject">Assunto: Confirme sua conta no Optativa+</p>
               <p>Olá, {values.name.split(' ')[0]}! Confirme seu e-mail para começar a contribuir.</p>
               <Button href={sent.devConfirmationUrl} size="sm">Confirmar meu e-mail</Button>
             </div>
@@ -104,7 +104,7 @@ export default function Register() {
       <div className="auth-card">
         <p className="kicker">Só para alunos{meta ? ` do ${meta.institution}` : ''}</p>
         <h1 className="page-title">Criar conta</h1>
-        <p className="lead">Qualquer pessoa pode ler o acervo. Para enviar materiais, avaliar e perguntar, cadastre-se com o e-mail da faculdade.</p>
+        <p className="lead">Qualquer pessoa pode ler o Optativa+. Para enviar materiais, avaliar e perguntar, cadastre-se com o e-mail da faculdade.</p>
 
         <form className="form" onSubmit={submit} noValidate>
           <Field label="Nome" error={errors.name} hint="É assim que você aparece nas suas contribuições.">

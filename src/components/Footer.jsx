@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div>
-          <p className="footer__title">acervo</p>
+          <p className="footer__title">Optativa+</p>
           <p className="footer__text">
             Feito por alunos, para alunos{meta ? ` de ${meta.course} do ${meta.institution}` : ''}.
             Não é um canal oficial da coordenação.

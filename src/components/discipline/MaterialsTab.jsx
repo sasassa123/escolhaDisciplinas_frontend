@@ -109,7 +109,7 @@ export default function MaterialsTab({ discipline, onCountChange }) {
             {filters.professor && `com ${filters.professor}`}.
           </EmptyState>
         ) : (
-          <EmptyState title="O acervo desta disciplina ainda está vazio" icon="file" action={<Button onClick={openUpload}><Icon name="upload" /> Enviar o primeiro material</Button>}>
+          <EmptyState title="O Optativa+ desta disciplina ainda está vazio" icon="file" action={<Button onClick={openUpload}><Icon name="upload" /> Enviar o primeiro material</Button>}>
             Tem um resumo, uma prova antiga ou uma lista resolvida? Quem vier depois agradece.
           </EmptyState>
         )

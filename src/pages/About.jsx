@@ -44,11 +44,11 @@ export default function About() {
     <main className="page page--reading about">
       <header className="page-header">
         <p className="kicker">Como funciona</p>
-        <h1 className="page-title">Um acervo que passa de turma para turma</h1>
+        <h1 className="page-title">Um Optativa+ que passa de turma para turma</h1>
         <p className="lead">
           A ementa oficial diz o que a disciplina cobre, mas não quanto tempo ela exige por semana, qual bibliografia
           realmente se usa ou o que cai na prova. Essa informação existe, só que presa na cabeça dos veteranos e em
-          grupos que somem a cada turma. O acervo guarda tudo isso na página de cada disciplina.
+          grupos que somem a cada turma. O Optativa+ guarda tudo isso na página de cada disciplina.
         </p>
       </header>
 
@@ -74,7 +74,7 @@ export default function About() {
       <section className="prose-block">
         <h2 className="block-title">Sobre o projeto</h2>
         <p>
-          O acervo atende {meta ? <>o curso de <strong>{meta.course}</strong> do <strong>{meta.institution}</strong></> : 'um único curso'} e
+          O Optativa+ atende {meta ? <>o curso de <strong>{meta.course}</strong> do <strong>{meta.institution}</strong></> : 'um único curso'} e
           foi desenvolvido pela equipe <strong>Gangue do Patinete</strong>: Leonardo de Avila, Matheus Pelissari, Pedro Gulin e
           Felippe Matias. Não é um canal oficial da coordenação — as informações vêm da própria comunidade.
         </p>

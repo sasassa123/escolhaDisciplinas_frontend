@@ -77,7 +77,7 @@ export default function Profile() {
         <div className="notice notice--welcome">
           <Icon name="star" />
           <div>
-            <strong>Conta confirmada. Bem-vindo ao acervo!</strong>
+            <strong>Conta confirmada. Bem-vindo ao Optativa+!</strong>
             <p>Marque abaixo as disciplinas que você já cursou. Elas viram selos de veterano: você pode avaliá-las e é avisado quando alguém tiver dúvidas nelas.</p>
           </div>
         </div>

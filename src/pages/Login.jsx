@@ -76,7 +76,7 @@ export default function Login() {
     <main className="page auth-page">
       <div className="auth-card">
         <p className="kicker">Bem-vindo de volta</p>
-        <h1 className="page-title">Entrar no acervo</h1>
+        <h1 className="page-title">Entrar no Optativa+</h1>
         <p className="lead">Use seu e-mail institucional{meta ? ` (@${meta.emailDomain})` : ''}.</p>
 
         <form className="form" onSubmit={submit} noValidate>

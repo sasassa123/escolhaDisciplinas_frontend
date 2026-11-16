@@ -131,7 +131,7 @@ export default function Home() {
 
         <div className="home-column">
           <div className="section-heading section-heading--small">
-            <h2>Chegou no acervo</h2>
+            <h2>Chegou no Optativa+</h2>
             <p>Materiais enviados recentemente pela comunidade.</p>
           </div>
           {activity.data && (

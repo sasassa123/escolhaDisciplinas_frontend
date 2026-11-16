@@ -47,7 +47,7 @@ export default function Search() {
       </header>
 
       {q.length > 0 && q.length < 2 && <p className="muted">Digite pelo menos 2 letras.</p>}
-      {isLoading && q.length >= 2 && <LoadingSpinner message="Procurando no acervo..." />}
+      {isLoading && q.length >= 2 && <LoadingSpinner message="Procurando no Optativa+..." />}
       {error && <ErrorState error={error} onRetry={reload} />}
 
       {data && q.length >= 2 && total === 0 && (

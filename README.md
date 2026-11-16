@@ -1,6 +1,6 @@
 # Gangue do Patinete — Frontend
 
-**Acervo** é um portal em que o aluno encontra, numa única página por disciplina, tudo o que hoje está espalhado entre grupos de WhatsApp, PDFs soltos e conversas de corredor: ementa, carga horária, pré-requisitos, professores, materiais enviados pela comunidade (resumos, provas antigas, listas, links), avaliações de dificuldade e carga de trabalho feitas por quem já cursou e uma área de perguntas e respostas com veteranos.
+**Optativa+** é um portal em que o aluno encontra, numa única página por disciplina, tudo o que hoje está espalhado entre grupos de WhatsApp, PDFs soltos e conversas de corredor: ementa, carga horária, pré-requisitos, professores, materiais enviados pela comunidade (resumos, provas antigas, listas, links), avaliações de dificuldade e carga de trabalho feitas por quem já cursou e uma área de perguntas e respostas com veteranos.
 
 Este repositório contém a interface web do projeto. A API fica no repositório [escolhaDisciplinas_api](https://github.com/sasassa123/escolhaDisciplinas_api).
 
