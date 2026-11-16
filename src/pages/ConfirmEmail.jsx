@@ -42,7 +42,7 @@ export default function ConfirmEmail() {
             <Button to="/entrar">Ir para o login</Button>
           </>
         ) : (
-          <LoadingSpinner message="Confirmando seu e-mail..." />
+          <LoadingSpinner emssage="Confirmando seu e-mail..." />
         )}
       </div>
     </main>
